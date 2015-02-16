@@ -36,10 +36,12 @@ nav {
 			border: 0 none;
 			border-radius: 3px;
 			display: inline-block;
+			font-family: Lato, sans-serif;
 			margin-left: 10px;
 			padding: 5px 0;
 			vertical-align: middle; 
 		}
+			select { padding: 5px; }
 
 		input {
 			height: 26px;

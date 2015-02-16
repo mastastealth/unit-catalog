@@ -15,12 +15,12 @@ Meteor.startup( () => {
 
 	// Update DB
 	if (Units.find().count()) Units.remove({});
-	for (u in data.units) {
+	for (let u in data.units) {
 		updateUnitList(u,data.units);
 	}
 
 	if (Filters.find().count()) Filters.remove({});
-	for (i in data.filters) {
+	for (let i in data.filters) {
 		Filters.insert({ 
 			name: data.filters[i].name,
 			values: data.filters[i].values
