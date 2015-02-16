@@ -1,0 +1,62 @@
+<head>
+  <title>unit-catalog</title>
+</head>
+
+<body>
+	{{> nav}}
+
+	<div id="content">
+		<div class="catalog wrap">
+			{{> unitCatalog}}
+		</div>
+	</div>
+</body>
+
+<template name="unitCatalog">
+    {{#each units}}
+      {{> unitCard}}
+    {{/each}}
+</template>
+
+<template name="nav">
+	<nav>
+		<div class="logo">LTF</div>
+		<div class="filters">
+			<span>Filter:</span>
+
+			{{#each filters}}
+		      {{> singleFilter}}
+		    {{/each}}
+
+			<span>
+				<input type="text" class="name" placeholder="Name...">
+			</span>
+		</div>
+	</nav>
+</template>
+
+<template name="unitCard">
+	<div class="card">
+		<span class="atk">{{atk}}</span>
+		<span class="def">{{def}}</span>
+		<span class="cost">{{cost}}</span>
+		<h2 class="name">{{name}}</h2>
+		<p class="desc">{{desc}}</p>
+	</div>
+</template>
+
+<template name="singleFilter">
+	<span>
+		{{name}}
+		<select data-filter="{{name}}">
+			<option value="-1" selected>Any</option>
+			{{#each filterOpt}}
+		      {{> filterOption}}
+		    {{/each}}
+		</select>
+	</span>
+</template>
+
+<template name="filterOption">
+	<option value="{{values}}">{{values}}</option>
+</template>

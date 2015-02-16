@@ -1,0 +1,93 @@
+*, *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+	font-family: Lato, sans-serif;
+	padding-top: 60px;
+}
+
+nav {
+	background: #333;
+	color: white;
+	line-height: 60px;
+	overflow: hidden;
+	padding: 0 20px;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	z-index: 99;
+
+	.logo { float: left; }
+
+	.filters {
+		float: right;
+
+		span { display: inline-block; }
+
+		>span:not(:first-child) {
+			background: #666;
+			border-radius: 5px;
+			line-height: 40px;
+			padding: 0 10px;
+			text-transform: capitalize;
+			vertical-align: middle;
+		}
+
+		select, input { 
+			border: 0 none;
+			border-radius: 3px;
+			display: inline-block;
+			margin-left: 10px;
+			padding: 5px 0;
+			vertical-align: middle; 
+		}
+
+		input {
+			height: 26px;
+			margin-left: 0;
+			padding: 0 5px;
+		}
+	}
+}
+
+.wrap {
+	margin: 0 auto 20px;
+	max-width: 1140px;
+	padding: 20px;
+
+	&.catalog {
+		display: flex;
+		flex-wrap: wrap;
+		//justify-content: center;
+	}
+}
+
+.card {
+	border: 1px solid #CCC;
+	height: 300px;
+	margin: 0 10px 20px;
+	padding: 15px;
+	position: relative;
+	text-align: center;
+	transition: transform 0.3s;
+	width: 200px;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	.atk, .def {
+		background: #DDD;
+		border-radius: 50%;
+		color: white;
+		display: block;
+		font-weight: 600;
+		height: 40px;
+		line-height: 40px;
+		position: absolute;
+		top: 5px;
+		text-align: center;
+		width: 40px;
+	}
+		.atk { background: red; left: 5px; }
+		.def { background: blue; right: 5px; }
+}

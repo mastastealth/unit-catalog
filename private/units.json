@@ -1,0 +1,422 @@
+{
+  "filters": {
+    "tags": {
+      "name": "tags",
+      "values": [
+        "repair",
+        "slow",
+        "antiair",
+        "medic",
+        "melee",
+        "flying",
+        "proxy",
+        "rifle",
+        "sniper",
+        "swift",
+        "bomber",
+        "stealth",
+        "farsight",
+        "explorer",
+        "regeneration",
+        "taunt",
+        "artillery",
+        "toxiccorpse",
+        "grenade",
+        "armored",
+        "venomous"
+      ]
+    },
+    "tier": {
+      "name": "tier",
+      "values": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "units": {
+    "beaver": {
+      "name": "Justin Beavers",
+      "atk": "10",
+      "def": "15",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "repair",
+          "slow"
+        ],
+        "tier": 1
+      }
+    },
+    "cat": {
+      "name": "Rocket Cats",
+      "atk": "20",
+      "def": "30",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "antiair"
+        ],
+        "tier": 2
+      }
+    },
+    "chicken": {
+      "name": "Chicken McMedics",
+      "atk": "15",
+      "def": "10",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "medic"
+        ],
+        "tier": 1
+      }
+    },
+    "boar": {
+      "name": "Beast Boars",
+      "atk": "40",
+      "def": "100",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "slow"
+        ],
+        "tier": 3
+      }
+    },
+    "crow": {
+      "name": "Murder Crows",
+      "atk": "20",
+      "def": "10",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "proxy",
+          "rifle"
+        ],
+        "tier": 2
+      }
+    },
+    "duck": {
+      "name": "Duck Hunters",
+      "atk": "35",
+      "def": "15",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "sniper"
+        ],
+        "tier": 2
+      }
+    },
+    "fox": {
+      "name": "Redheaded Foxes",
+      "atk": "70",
+      "def": "40",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "swift"
+        ],
+        "tier": 3
+      }
+    },
+    "eagle": {
+      "name": "Eagle Aviators",
+      "atk": "35",
+      "def": "15",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "bomber",
+          "slow"
+        ],
+        "tier": 3
+      }
+    },
+    "falcon": {
+      "name": "Falcon Flyers",
+      "atk": "0",
+      "def": "50",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "stealth",
+          "farsight",
+          "explorer"
+        ],
+        "tier": 1
+      }
+    },
+    "hawk": {
+      "name": "Hawk Eyes",
+      "atk": "15",
+      "def": "20",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "swift",
+          "rifle"
+        ],
+        "tier": 2
+      }
+    },
+    "iguana": {
+      "name": "Iguana Gunmen",
+      "atk": "35",
+      "def": "40",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "rifle",
+          "regeneration"
+        ],
+        "tier": 3
+      }
+    },
+    "lizard": {
+      "name": "Stabby Lizards",
+      "atk": "10",
+      "def": "15",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "regeneration"
+        ],
+        "tier": 1
+      }
+    },
+    "honeybadger": {
+      "name": "Honey Badger",
+      "atk": "15",
+      "def": "50",
+      "cost": 0,
+      "desc": "",
+      "filters": {
+        "tags": [
+          "rifle",
+          "explorer"
+        ],
+        "tier": 0
+      }
+    },
+    "mockingbird": {
+      "name": "Mocking Scouts",
+      "atk": "0",
+      "def": "30",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "taunt"
+        ],
+        "tier": 2
+      }
+    },
+    "mole": {
+      "name": "The Mole",
+      "atk": "15",
+      "def": "10",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "stealth"
+        ],
+        "tier": 1
+      }
+    },
+    "owl": {
+      "name": "Night Owls",
+      "atk": "50",
+      "def": "20",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "stealth",
+          "proxy",
+          "rifle"
+        ],
+        "tier": 3
+      }
+    },
+    "raccoon": {
+      "name": "Rifle Raccoons",
+      "atk": "20",
+      "def": "15",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "rifle",
+          "stealth"
+        ],
+        "tier": 2
+      }
+    },
+    "possum": {
+      "name": "Proxy Possums",
+      "atk": "15",
+      "def": "10",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "proxy",
+          "swift"
+        ],
+        "tier": 1
+      }
+    },
+    "rattlesnake": {
+      "name": "Sneaky Snakes",
+      "atk": "35",
+      "def": "15",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "proxy",
+          "stealth"
+        ],
+        "tier": 2
+      }
+    },
+    "siegedonkey": {
+      "name": "Siege Donkeys",
+      "atk": "25",
+      "def": "20",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "artillery",
+          "slow"
+        ],
+        "tier": 2
+      }
+    },
+    "toad": {
+      "name": "Explodey Toady",
+      "atk": "20",
+      "def": "15",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "toxiccorpse"
+        ],
+        "tier": 2
+      }
+    },
+    "skunk": {
+      "name": "Skunk Grenadiers",
+      "atk": "10",
+      "def": "15",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "grenade"
+        ],
+        "tier": 2
+      }
+    },
+    "squirrel": {
+      "name": "Squirrel Pistoliers",
+      "atk": "10",
+      "def": "10",
+      "cost": "10",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "rifle"
+        ],
+        "tier": 1
+      }
+    },
+    "turtle": {
+      "name": "I Like Turtles",
+      "atk": "10",
+      "def": "30",
+      "cost": "20",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "rifle",
+          "armored"
+        ],
+        "tier": 2
+      }
+    },
+    "viper": {
+      "name": "Venomous Vipers",
+      "atk": "25",
+      "def": "50",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "venomous",
+          "stealth",
+          "regeneration"
+        ],
+        "tier": 3
+      }
+    },
+    "vulture": {
+      "name": "Vulture Bombers",
+      "atk": "45",
+      "def": "15",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "flying",
+          "artillery"
+        ],
+        "tier": 3
+      }
+    },
+    "wolf": {
+      "name": "Big Bad Wolves",
+      "atk": "10",
+      "def": "70",
+      "cost": "30",
+      "desc": "",
+      "filters": {
+        "tags": [
+          "melee",
+          "taunt"
+        ],
+        "tier": 3
+      }
+    }
+  }
+}
