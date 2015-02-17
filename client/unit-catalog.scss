@@ -5,6 +5,8 @@ body {
 	padding-top: 60px;
 }
 
+a { color: #2ecc71; }
+
 nav {
 	background: #333;
 	color: white;
@@ -59,6 +61,7 @@ nav {
 	&.catalog {
 		display: flex;
 		flex-wrap: wrap;
+		min-height: 480px;
 		//justify-content: center;
 	}
 }
@@ -70,12 +73,20 @@ nav {
 	padding: 15px;
 	position: relative;
 	text-align: center;
-	transition: transform 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
 	width: 200px;
+
+	h2 { 
+		font-size: 20px;
+		margin-bottom: 20px;
+		padding: 0 20px; 
+	}
 
 	&:hover {
 		transform: scale(1.1);
 	}
+
+	&:not(:hover) { opacity: 0.75; }
 
 	.atk, .def {
 		background: #DDD;
@@ -92,4 +103,27 @@ nav {
 	}
 		.atk { background: red; left: 5px; }
 		.def { background: blue; right: 5px; }
+
+	.cost {
+		background: gold;
+		border-radius: 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+		padding: 5px;
+	}
+
+	.tags span {
+		background: #CCC;
+		border-radius: 5px;
+		display: inline-block;
+		font-size: 12px;
+		margin: 0 5px 4px;
+		padding: 4px 8px;
+	}
+}
+
+footer {
+	font-size: 12px;
+	line-height: 60px;
+	text-align: center;
 }

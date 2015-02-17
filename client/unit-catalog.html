@@ -1,5 +1,5 @@
 <head>
-  <title>unit-catalog</title>
+  <title>Unit Catalog | LEADtoFIRE</title>
 </head>
 
 <body>
@@ -10,6 +10,8 @@
 			{{> unitCatalog}}
 		</div>
 	</div>
+
+	<footer>Unit Catalog. Powered by <a href="//www.meteor.com">Meteor</a>. Created by <a href="//www.brianfran.co">Brian Franco</a>. Freely available on <a href="https://github.com/mastastealth/unit-catalog">Github</a>.</footer>
 </body>
 
 <template name="unitCatalog">
@@ -20,7 +22,7 @@
 
 <template name="nav">
 	<nav>
-		<div class="logo">LTF</div>
+		<div class="logo">LEADtoFIRE</div>
 		<div class="filters">
 			<span>Filter:</span>
 
@@ -36,12 +38,17 @@
 </template>
 
 <template name="unitCard">
-	<div class="card">
+	<div class="card {{#each filters.tags}}{{> singleTag}}{{/each}}">
 		<span class="atk">{{atk}}</span>
 		<span class="def">{{def}}</span>
 		<span class="cost">{{cost}}</span>
 		<h2 class="name">{{name}}</h2>
 		<p class="desc">{{desc}}</p>
+		<p class="tags">
+			{{#each filters.tags}}
+		      <span>{{> singleTag}}</span>
+		    {{/each}}
+		</p>
 	</div>
 </template>
 
@@ -59,4 +66,8 @@
 
 <template name="filterOption">
 	<option value="{{values}}">{{values}}</option>
+</template>
+
+<template name="singleTag">
+	{{tags}} 
 </template>

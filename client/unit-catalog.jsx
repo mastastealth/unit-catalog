@@ -69,4 +69,11 @@
 			console.log('Click');
 	    }
 	});
+
+	// Iterate filter options per filter dropdown
+	Template.singleTag.helpers({
+		tags: function() {
+			return this+' ';
+		}
+	});
 //});
