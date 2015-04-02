@@ -1,0 +1,422 @@
+{
+  "deck" : {
+    "max" : 8,
+    "per" : 1
+  },
+  "filters": {
+    "tags": {
+      "name": "tags",
+      "values": [
+        "flamethrower",
+        "melee",
+        "stealth",
+        "flying",
+        "scavenger",
+        "swift",
+        "rifle",
+        "medic",
+        "sniper",
+        "machinegun",
+        "summon",
+        "berserker",
+        "slow",
+        "spawner",
+        "venomous",
+        "artillery",
+        "grenade",
+        "landmine",
+        "proxy",
+        "truesight",
+        "outpost",
+        "timebomb",
+        "stim"
+      ]
+    },
+    "tier": {
+      "name": "tier",
+      "values": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "units": {
+    "boar": {
+      "name": "Roasting Pigs",
+      "atk": "20",
+      "def": "70",
+      "cost": "20",
+      "filters": {
+        "tags": [
+          "flamethrower"
+        ],
+        "tier": 2
+      },
+      "desc": "Those big claws I have!",
+      "bt": "20"
+    },
+    "chameleon": {
+      "name": "Crazy Chameleon",
+      "atk": "20",
+      "def": "10",
+      "cost": "10",
+      "filters": {
+        "tags": [
+          "melee",
+          "stealth"
+        ],
+        "tier": 1
+      },
+      "desc": "Woof woof! What's up dog?",
+      "bt": "10"
+    },
+    "crow": {
+      "name": "Scavenger Crows",
+      "atk": "0",
+      "def": "10",
+      "cost": "10",
+      "filters": {
+        "tags": [
+          "flying",
+          "scavenger"
+        ],
+        "tier": 1
+      },
+      "desc": "Them donkey wings though...",
+      "bt": "10"
+    },
+    "falcon": {
+      "name": "Falcon Flyers",
+      "atk": "20",
+      "def": "25",
+      "cost": "20",
+      "filters": {
+        "tags": [
+          "flying",
+          "swift",
+          "rifle"
+        ],
+        "tier": 2
+      },
+      "desc": "Falcon punch!",
+      "bt": "20"
+    },
+    "chicken": {
+      "name": "Chicken McMedics",
+      "atk": "15",
+      "def": "5",
+      "cost": "10",
+      "filters": {
+        "tags": [
+          "medic"
+        ],
+        "tier": 1
+      },
+      "desc": "Baaaaa",
+      "bt": "10"
+    },
+    "fox": {
+      "name": "Redheaded Foxes",
+      "atk": "50",
+      "def": "30",
+      "cost": "30",
+      "filters": {
+        "tags": [
+          "sniper",
+          "stealth",
+          "swift"
+        ],
+        "tier": 3
+      },
+      "desc": "Grey Fox",
+      "bt": "30"
+    },
+    "honeybadger": {
+      "name": "Honey Badger",
+      "atk": "70",
+      "def": "50",
+      "cost": "30",
+      "filters": {
+        "tags": [
+          "machinegun"
+        ],
+        "tier": 3
+      },
+      "desc": "Don't Care",
+      "bt": "30"
+    },
+    "lizard": {
+      "name": "Stabby Lizards",
+      "atk": "15",
+      "def": "15",
+      "cost": "10",
+      "filters": {
+        "tags": [
+          "melee",
+          "swift"
+        ],
+        "tier": 1
+      },
+      "desc": "Imma stab you!",
+      "bt": "10"
+    },
+    "mole": {
+      "name": "The Mole",
+      "atk": "15",
+      "def": "15",
+      "cost": "0",
+      "filters": {
+        "tags": [
+          "rifle",
+          "summon"
+        ],
+        "tier": 0
+      },
+      "desc": "Mole is in wrong game!",
+      "bt": "30"
+    },
+    "mouse": {
+      "name": "Mouse Paratroopers",
+      "atk": "10",
+      "def": "10",
+      "cost": 0,
+      "filters": {
+        "tags": [
+          "berserker"
+        ],
+        "tier": 0
+      }
+    },
+    "owl": {
+      "name": "Night Owls",
+      "atk": "0",
+      "def": "50",
+      "cost": "30",
+      "filters": {
+        "tags": [
+          "slow",
+          "flying",
+          "spawner"
+        ],
+        "tier": 3
+      },
+      "desc": "Big flying battleactors bro!",
+      "bt": "30"
+    },
+    "raccoon": {
+      "name": "Rifle Raccoons",
+      "atk": "40",
+      "def": "25",
+      "cost": "20",
+      "filters": {
+        "tags": [
+          "rifle",
+          "stealth"
+        ],
+        "tier": 2
+      },
+      "desc": "I'm a shooting gopher!",
+      "bt": "20"
+    },
+    "pig": {
+      "name": "Pigs?",
+      "atk": "10",
+      "def": "15",
+      "cost": 0,
+      "filters": {
+        "tags": [
+          "melee",
+          "swift"
+        ],
+        "tier": 0
+      }
+    },
+    "rattlesnake": {
+      "name": "Rattlesnakes",
+      "atk": "10",
+      "def": "15",
+      "cost": "20",
+      "filters": {
+        "tags": [
+          "venomous"
+        ],
+        "tier": 2
+      },
+      "desc": "Where you is? CANNOT SEE!",
+      "bt": "20"
+    },
+    "siegedonkey": {
+      "name": "Siege Donkeys",
+      "atk": "100",
+      "def": "50",
+      "cost": "30",
+      "filters": {
+        "tags": [
+          "artillery",
+          "slow"
+        ],
+        "tier": 3
+      },
+      "desc": "Donkeys be sieging, YEEE HAW!",
+      "bt": "30"
+    },
+    "skunk": {
+      "name": "Skunk Grenadiers",
+      "atk": "20",
+      "def": "35",
+      "cost": "20",
+      "filters": {
+        "tags": [
+          "grenade"
+        ],
+        "tier": 2
+      },
+      "desc": "We throw stink bombs!",
+      "bt": "20"
+    },
+    "squirrel": {
+      "name": "Squirrel Pistoliers",
+      "atk": "10",
+      "def": "10",
+      "cost": "10",
+      "filters": {
+        "tags": [
+          "rifle"
+        ],
+        "tier": 1
+      },
+      "desc": "We shooting mah guns! PEW PEW PEW!",
+      "bt": "10"
+    },
+    "structure_balloonsniper": {
+      "name": "Balloon Sniper",
+      "atk": "40",
+      "def": "20",
+      "cost": "100",
+      "desc": "ZZZZZAAAAAAAP!",
+      "filters": {
+        "tags": [
+          "flying",
+          "sniper"
+        ],
+        "tier": 10
+      }
+    },
+    "structure_artillerycannon": {
+      "name": "Artillery Cannon",
+      "atk": "60",
+      "def": "20",
+      "cost": "100",
+      "desc": "Oh we shoot so far!",
+      "filters": {
+        "tags": [
+          "artillery"
+        ],
+        "tier": 10
+      }
+    },
+    "structure_landmine": {
+      "name": "Proximity Mines",
+      "atk": "50",
+      "def": "5",
+      "cost": "20",
+      "desc": "Back from Goldeneye!",
+      "filters": {
+        "tags": [
+          "landmine",
+          "proxy"
+        ],
+        "tier": 2
+      }
+    },
+    "structure_machinegun": {
+      "name": "Machine Gun Nest",
+      "atk": "30",
+      "def": "60",
+      "cost": "100",
+      "desc": "ZZZZZAAAAAAAP!",
+      "filters": {
+        "tags": [
+          "machinegun"
+        ],
+        "tier": 10
+      }
+    },
+    "structure_bunker": {
+      "name": "Bunkers",
+      "def": "100",
+      "cost": "10",
+      "desc": "Bunkers!",
+      "filters": {
+        "tier": 1
+      }
+    },
+    "structure_outpost": {
+      "name": "Supply Outpost",
+      "atk": "0",
+      "def": "40",
+      "cost": "10",
+      "desc": "I SEE YOU!",
+      "filters": {
+        "tags": [
+          "truesight",
+          "outpost"
+        ],
+        "tier": 1
+      }
+    },
+    "turtle": {
+      "name": "I Like Turtles",
+      "atk": "80",
+      "def": "100",
+      "cost": "30",
+      "filters": {
+        "tags": [
+          "melee",
+          "slow"
+        ],
+        "tier": 3
+      },
+      "desc": "I Like Turtles",
+      "bt": "30"
+    },
+    "structure_wormhole": {
+      "name": "Wormhole",
+      "def": "30",
+      "cost": "10",
+      "filters": {
+        "tier": 1
+      }
+    },
+    "toad": {
+      "name": "Explodey Toady",
+      "atk": "20",
+      "def": "15",
+      "cost": "10",
+      "filters": {
+        "tags": [
+          "timebomb"
+        ],
+        "tier": 1
+      },
+      "desc": "I fart when I die and it kills people!",
+      "bt": "10"
+    },
+    "wolf": {
+      "name": "Big Bad Wolves",
+      "atk": "30",
+      "def": "50",
+      "cost": "30",
+      "filters": {
+        "tags": [
+          "rifle",
+          "stim"
+        ],
+        "tier": 3
+      },
+      "desc": "Those big claws I have!",
+      "bt": "30"
+    }
+  }
+}

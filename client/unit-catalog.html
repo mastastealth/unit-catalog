@@ -11,6 +11,10 @@
 		</div>
 	</div>
 
+	<aside>
+		
+	</aside>
+
 	<footer>Unit Catalog. Powered by <a href="//www.meteor.com">Meteor</a>. Created by <a href="//www.brianfran.co">Brian Franco</a>. Freely available on <a href="https://github.com/mastastealth/unit-catalog">Github</a>.</footer>
 </body>
 
@@ -31,7 +35,7 @@
 		    {{/each}}
 
 			<span>
-				<input type="text" class="name" placeholder="Name...">
+				<i>🔍</i> <input type="text" class="name" placeholder="Name...">
 			</span>
 		</div>
 	</nav>
@@ -41,14 +45,17 @@
 	<div class="card {{#each filters.tags}}{{> singleTag}}{{/each}}">
 		<span class="atk">{{atk}}</span>
 		<span class="def">{{def}}</span>
-		<span class="cost">{{cost}}</span>
+		<span class="cost">{{bcost}}/{{cost}}</span>
 		<h2 class="name">{{name}}</h2>
 		<p class="desc">{{desc}}</p>
+
 		<p class="tags">
 			{{#each filters.tags}}
 		      <span>{{> singleTag}}</span>
 		    {{/each}}
 		</p>
+
+		<span class="bt">{{bt}}</span>
 	</div>
 </template>
 

@@ -3,6 +3,7 @@
 body {
 	font-family: Lato, sans-serif;
 	padding-top: 60px;
+	margin-right: 300px;
 }
 
 a { color: #2ecc71; }
@@ -23,7 +24,10 @@ nav {
 	.filters {
 		float: right;
 
-		span { display: inline-block; }
+		span { 
+			display: inline-block; 
+			margin-left: 10px;
+		}
 
 		>span:not(:first-child) {
 			background: #666;
@@ -50,6 +54,13 @@ nav {
 			margin-left: 0;
 			padding: 0 5px;
 		}
+	}
+
+	i { 
+		font-size: 1.25em;
+		font-style: normal; 
+		margin-right: 8px;
+		vertical-align: middle;
 	}
 }
 
@@ -112,6 +123,8 @@ nav {
 		padding: 5px;
 	}
 
+	.desc { margin-bottom: 20px; }
+
 	.tags span {
 		background: #CCC;
 		border-radius: 5px;
@@ -119,6 +132,36 @@ nav {
 		font-size: 12px;
 		margin: 0 5px 4px;
 		padding: 4px 8px;
+	}
+}
+
+aside {
+	background: #222;
+	height: 100%;
+	overflow: auto;
+	padding: 80px 10px 10px;
+	position: fixed;
+	top: 0; right: 0;
+	width: 300px;
+
+	div {
+		border: 1px solid white;
+		border-radius: 6px;
+		color: white;
+		margin-bottom: 5px;
+		padding: 10px;
+
+		&:after {
+			background: white;
+			border-radius: 10px;
+			color: #666;
+			content: attr(data-count) 'x';
+			float: right;
+			font-size: 10px;
+			line-height: 20px;
+			text-align: center;
+			width: 20px;
+		}
 	}
 }
 

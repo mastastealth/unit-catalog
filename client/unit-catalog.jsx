@@ -50,7 +50,7 @@
 	// Listener for global name search
 	Template.nav.events({
 	    'change .name': function(e){
-			console.log(e.target.value);
+			//console.log(e.target.value);
 	        Session.set('selectedFilter', {'name': {$regex: e.target.value, $options: 'i'} });
 	    }
 	});
@@ -58,15 +58,27 @@
 	// Iterate through cards displayed in catalog
 	Template.unitCatalog.helpers({  
 		units: function() {    
-			console.log( Session.get('selectedFilter') );
+			//console.log( Session.get('selectedFilter') );
 			return Units.find(Session.get('selectedFilter'));
 		}
 	});
 
 	// Clicking on stuff in the catalog
 	Template.unitCatalog.events({
-		'click .card': function(){
-			console.log('Click');
+		'click .card': function(e){
+			//console.log('Click');
+			var name = e.target.querySelector('.name').textContent;
+			var nameid = name.replace(' ','').toLowerCase();
+			var div = document.querySelector('aside div[data-id="'+nameid+'"]');
+
+			if ( div ) {
+				var c = parseInt( div.getAttribute('data-count') );
+				div.setAttribute('data-count', c+1);
+			} else {
+				document.querySelector('aside').innerHTML += `<div data-id="${nameid}" data-count=0>${name}</div>`;
+			}
+
+			console.log ( LZString.compress(document.querySelector('aside').innerHTML) );
 	    }
 	});
 
